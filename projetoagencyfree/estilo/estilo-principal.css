@@ -89,3 +89,34 @@
     top: -80px;
     position: absolute;
 }
+
+.photo-cell-works{
+    margin-left:7%;
+    margin-top:7%;
+    
+}
+.photo-cell-image-works{
+    height: 300px;
+    width: 450px;
+}
+.work_conteiner_row{
+    display:flex;
+    
+}
+.box-works-paragraph{
+    margin-top:12%;
+}
+.works-photos{
+    display:flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+      
+}
+.work-image--center{
+    flex-direction: column;
+    
+}
+
+
+
