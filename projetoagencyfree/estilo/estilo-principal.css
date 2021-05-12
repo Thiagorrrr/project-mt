@@ -117,7 +117,7 @@
 .works-photos__image {
     width: 100%;
 }
-.works-photos__image:first-child {
+.works-photos__size.works-photos__size--middle .works-photos__image:first-child {
     padding-bottom: 10px;
 }
 
