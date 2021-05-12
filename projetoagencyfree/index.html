@@ -1,43 +1,55 @@
 <!doctype html>
 <html lang="pt-br">
+
 <head>
-  
-   <meta charset="utf-8"> <!--evito de ter problema no nrowser com acento-->
-   <meta name="author" content="matheus">
-   <meta name="description" content="lista de documentos">
-   <meta name="keywords"  content="html5, tecnologio">
-   <link rel="stylesheet"  href="estilo/normalize.css">
-   <link rel="stylesheet"  href="estilo/estilo.css">
+
+    <meta charset="utf-8">
+    <!--evito de ter problema no nrowser com acento-->
+    <meta name="author" content="matheus">
+    <meta name="description" content="lista de documentos">
+    <meta name="keywords" content="html5, tecnologio">
+    <link rel="stylesheet" href="estilo/normalize.css">
+    <link rel="stylesheet" href="estilo/estilo.css">
+    <link rel="stylesheet" href="estilo/estilo-principal.css">
 </head>
 
 <body>
-   <header>
-      
-      <img src="fotoscss/Retângulo 5655.png" alt= "computador" class="img-fundo">
-        <div class ="title">
-         <h1>   WE ARE <br>
-           <b>DIGITAL AGENCY</b> </h1>
-         </div>
-      <div class="title-coment">
-         <p>Etiam Convallis Elementum Sapien, A Aliquam <br> Turpis Aliquam Vitae. Praesent Sollicitudin Felis Vel Mi Facilisis Posuere. Nulla</p>
-
-      </div>    
-      <div class="photo-cell">
-         <img src="fotoscss/Grupo 24857.png">
-
-      </div>    
-      <div class="menu menu1">
-         <a href="index.html" class="menu-icon1"><img src="fotoscss/Grupo 24853.png" >Mazen Pacha</a>
+    <header class="header">
+        <nav class="header__list">
+            <li class="header__item">
+                <a class="header__link" href="index.html">
+                    <img class="header__icon" src="fotoscss/Grupo 24853.png">Mazen Pacha
+                </a>
+            </li>
+            <li class="header__item">
+                <a class="header__link" href="main.html">
+                    <img class="header__icon" src="fotoscss/Grupo 24750.png">Navigation
+                </a>
+            </li>
+            <li class="header__item header__item--free-quote">
+                <a class="header__link" href="#">
+                    <img class="header__icon" src="fotoscss/Icon feather-mail.png">Free Quote
+                </a>
+            </li>
+        </nav>
+    </header>
+    <main class="main-principal container">
+        <div class="box">
+            <div class="box-text">
+                <h1 class="box-text__title"> WE ARE <br>
+                    <!-- strong para SEO definição mais atualizada de bold -->
+                    <strong>DIGITAL AGENCY</strong>
+                </h1>
+            </div>
+            <div class="box-coment">
+                <p class="box-coment-paragraph">Etiam Convallis Elementum Sapien, A Aliquam Turpis Aliquam.</p>
+                <p class="box-coment-paragraph">Praesent Sollicitudin Felis Vel Mi Facilisis Posuere.</p>
+            </div>
         </div>
-         <div class="menu menu2">
-             <a href="main.html"class="main-icon2">Navigation<img src="fotoscss/Grupo 24750.png" ></a>
+        <div class="photo-cell">
+            <img class="photo-cell-image" src="fotoscss/Grupo 24857.png">
         </div>
-             <div class="menu menu3">
-                <a href="#" class="menu-icon3"><img src="fotoscss/Icon feather-mail.png" >Lets talk</a>
-      </div>
-
-   
-   </header>
+    </main>
 
 </body>
 

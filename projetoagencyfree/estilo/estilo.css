@@ -1,105 +1,100 @@
+/* lembrar de sempre ter uma boa identação do css para não ficar confuso 
+    e desorganizado */
 
-body{background-color:black;
-height: 620px;
-font-family: Raleway;}
-header {
-    color:white;
-    
-    }
-.img-fundo{width:100%;
-height: 100%;
-position:absolute;
-background-image: cover
-;
-}
-.photo-cell{
-    position:absolute;
-    top:18%;
-    left:60%;
-    margin:0;
-    padding:0;
-}
-.photo-cell img{width:80%;}
 
-.title{
+/* 
+nesse contexto o ideal seria incluir a imagem pelo css 
+
+.img-fundo {
+    width: 100%;
+    height: 100%;
     position: absolute;
-    top:25%;
-    left:9%;
-    padding:0;
-    margin:0;
-    height: 20%;
-    width: 30%;}
-.menu a { text-decoration:none;
-color:white;
-letter-spacing: 2px;
+     definindo z index para por tras de todos os atributos dando uma prioriade menor
+    z-index: -1;
+    background-size: cover;
+} 
+
+.photo-cell {
+    position: absolute;
+    top: 18%;
+    left: 60%;
+    margin: 0;
+    padding: 0;
 }
-.menu1 img {
+
+.photo-cell img {
+    width: 80%;
+}
+
+.title {
+    position: absolute;
+    top: 25%;
+    left: 9%;
+    padding: 0;
+    margin: 0;
+    height: 20%;
+    width: 30%;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+}
+
+
+/* .menu1 img {
     margin-right: 15px;
 }
+
 .menu2 img {
     margin-left: 15px;
 }
+
 .menu3 img {
     margin-right: 15px;
 }
-.Free-quote img {
+
+.Free-quote img,
+.menu1,
+.menu2,
+.menu3 {
     margin-right: 15px;
 }
-.menu1{
-    position:absolute;
-    top:5%;
-    left:9%;
-}
-.menu2{
-    position:absolute;
-    top:5%;
-    left:45%;
-   }
-.menu3{
-    position:absolute;
-    top:5%;
-    right: 15%;
-   }
-.Free-quote {
- background-color: #2a69ee;
- position:absolute;
-    top:5%;
-    right: 15%;
-    border-radius: 2px;
-    padding:3px;
-}
-.title h1{font-weight: normal;
-    padding:0;
-    margin:0;
-    font-size: 50px;
-font-family: Raleway;
-}
-.title-coment{
-    position: absolute;
-top:70%;
-left:9%;
-font-size: 20px;
+ para casos de repetição de css o ideal seria juntar os atributos iguais 
+*/
+
+.main-title-position {
+    color: white;
+    max-width: 50%;
 }
 
-.main-title-position{
-    position: absolute;
-    top:30%;
-    left:9%;
-    color:white;
-    
+.main-title-position__list {
+    /*redefinindo tag ul pq por padrão ele recebe padding e margin*/
+    padding: 0;
+    margin: 0;
 }
 
-.main-title-position a{
-    line-height: 60px;
+.main-title-position__item {
+    /* removendo pseudo elemento de lista, pontinhos de marcação*/
+    list-style: none;
+}
+
+.main-title-position__link {
+    /* line-height:  1 adiciona o mesmo tamanho da fonte setada */
+    line-height: 1;
     display: block;
     text-decoration: none;
-    color:white;
-    padding:0;
-    margin:0;
+    color: white;
+    padding-bottom: 4px;
+    margin: 0;
     font-weight: bold;
-    font-size:50px;
-    
+    font-size: 50px;
 }
-.main-title-position :first-child{
-    color:#06EBBF;
+
+
+/*para ativar um item o ideal ter uma class modificadora como ativado*/
+
+.main-title-position__link.main-title-position__link--active {
+    color: #06EBBF;
 }
