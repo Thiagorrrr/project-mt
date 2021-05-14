@@ -90,47 +90,135 @@
     position: absolute;
 }
 
+.header--work {
+    /* definir display flex para alinhar items */
+    padding: 30px 0;
+    margin: 0 120px 0 0;
+    color: white;
+    
+    
+}
+
+.works-conteiner{
+    margin-top:100px;
+    
+}
 
 .photo-cell-image-works{
     height: 300px;
-    width: 450px;
+    width: 430px;
+    margin-top:20px;
 }
-.work_conteiner_row{
+
+.work-conteiner__row{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    margin: 0 40px;
+    margin: 0 200px 0 40px;
     
 }
-.box-works-paragraph{
-    margin-top:12%;
+
+.box-works__paragraph{
+    margin-top: 0;
     color: #fff;
 }
+
 .works-photos {
     display:flex;
-    justify-content: center;
-    margin: 0 40px;
-    padding-top: 80px;
+    margin-left:130px;
+    padding-top: 150px;
     width: auto;
 }
 
 .works-photos__image {
     width: 100%;
-}
-.works-photos__size.works-photos__size--middle .works-photos__image:first-child {
     padding-bottom: 10px;
 }
 
-.works-photos__size.works-photos__size--middle {
+.works-photos__size.works-photos__size--middle{
     display: flex;
     flex-direction: column;
     padding: 0 10px;
 }
 
-]
-.work-image--center{
-    flex-direction: column;   
+.box-works__paragraph p{
+ height: 50px;
+ width:500px;
+ overflow: auto;
+ margin-top:0;
 }
 
+.box-works__paragraph h2{
+    margin-bottom:3px;
+    margin-top:30px;
+}
 
+.works-bottom-conteiner{
+    margin-top:200px;  
+    padding-bottom:150px; 
+}
+.works-photos-bottom{
+       display:flex;      
+}
+.works-photos-bottom__small{
+    flex-direction: column;
+   
+}
+.works-image-bottom__size{
+    width:75%;
+}
+.works-photos-bottom__small :first-child{
+    margin-bottom:55px;
+}
+.works-photos-bottom__big{
+    margin-left:130px;
+}
+.service-conteiner{
+    margin-top:100px;
+    font-size: 10px;
+    margin:100px 0;
+    padding:0 20%;
+    color:white;
+}
+.service-top-paragraph{
+    width:100%;
+    
+    
+}
+.service-icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 100px;
+}
 
+.service-row{
+    display:flex;
+    }
+.service-row-margin{
+    margin-top:50px;
+}
+.service-row-top-image{
+    width: 95%;
+}
+.service-row-top-paragraph p{
+    margin-bottom:20px;
+}
+.service-row-top-photo{
+    padding-left:80px;
+}
+.service-row-midlle-image{
+    width:90%;
+}
+.service-row-midlle-paragraph p{
+    margin-top:20px;
+}
+.service-row-bottom-image{
+    width:100%;
+}
+.service-row-bottom-paragraph p{
+    margin-top:20px;
+}
+.service-row-bottom-photo{
+    margin-left:20px;
+}
